@@ -1,0 +1,149 @@
+/* General Styles */
+
+body {
+    margin: 0
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.separator {
+    margin: 40px auto;
+    text-align: center;
+}
+
+footer {
+    height: 100px;
+}
+
+/* Styles for Swiper, hero */
+.swiper-container{
+    &.hero {
+        width: 100%;
+        height: calc(100vw * 0.5);
+        background-color: white;
+    }
+
+    .hero .swiper-slide {
+        background-color: white;
+    }
+
+
+    /* Styles for each item, hero */
+    &.hero .item .imagen {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+
+
+    /* Styles for Swiper, first carousel instance*/
+
+    &.i1 {
+        width: 90%;
+        height: calc((100vw/2 - 30px) * 0.8);
+        background-color: white;
+    }
+
+    &.i1 .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background-color: white;
+        margin-top: 10px !important
+    }
+
+    /* Styles for each item, first carousel instance */
+    &.i1 .item {
+
+        .imagen {
+            height: 80%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        p {
+            margin: 0 10px;
+        }
+
+        .texto {
+            height: 12%;
+            font-size: 1.7vw;
+            text-align: left;
+            font-weight: 500;
+            background-color: rgb(194, 194, 194);
+        }
+
+        @media (max-width: 600px) {
+            .texto {
+                font-size: 3vw;
+            }
+        }
+    }   
+    &.i1 .swiper-pagination {
+        bottom: 0;
+    }
+
+    &.i2 {
+        width: 90%;
+        height: calc((100vw/2) * 0.6);
+        background-color: white;
+    }
+    &.i2 .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background-color: white;
+        margin-top: 10px !important
+    }
+    /* Styles for each item */
+
+    &.i2 .item .imagen {
+        height: 77%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &.i2 .item p {
+        margin: 0 10px;
+    }
+
+    &.i2 .item .texto {
+        font-size: 1.7vw;
+        text-align: left;
+        font-weight: 500;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .swiper-container{
+        &.hero {
+        height: calc(100vw * 1.2);
+        }
+
+
+        &.i1 {
+            height: calc((100vw/2 - 30px) * 3.2);
+        }
+        &.i1 .swiper-slide {
+            height: 45%;
+            background-color: white
+        }
+        &.i2 {
+            height: calc((100vw/2) * 1.5);
+        }
+        &.i2 .swiper-slide {
+            height: 90%;
+            background-color: white;
+        }
+
+        &.i2 .item .texto {
+            font-size: 3vw;
+        }
+
+    }
+}
