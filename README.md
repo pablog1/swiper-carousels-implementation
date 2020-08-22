@@ -4,7 +4,7 @@
 ![](https://img.shields.io/badge/SwiperJS-yes-brightgreen)   
 ![](https://img.shields.io/badge/documentation-yes-brightgreen)
 <br>
-Examples from Sliders and Carousels, what are nice and simple to implement in ecommerce websites (also in each website) using the SwiperJS Library
+Examples from Sliders and Carousels, what are nice and simple to implement in ecommerce websites (also in any website) using the SwiperJS Library
 
 <br>
 
