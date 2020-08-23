@@ -1,4 +1,4 @@
-<h1>Carousels and Sliders Demo for Ecommerce Websites</h1>
+<h1>Carousels and Sliders examples for eCommerce Websites</h1>
 
 
 [![](https://img.shields.io/badge/SwiperJS-yes-brightgreen)](https://swiperjs.com/)
