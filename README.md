@@ -9,7 +9,7 @@ Examples from Sliders and Carousels, what are nice and simple to implement in ec
 <br>
 
 ## Main Slider
-Simple main slider with images, arrows and bullets pagination.
+Simple full width slider with images, arrows and bullets pagination, optimized for desktop and mobile sizes.
 
 ## Carousel 1
 Carousel with arroys, bullets pagination and **two rows** if the viewport width is less as 600px.
