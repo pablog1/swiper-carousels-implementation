@@ -24,6 +24,7 @@ footer {
   /* Styles for each item, hero */
   /* Styles for Swiper, first carousel instance*/
   /* Styles for each item, first carousel instance */
+  /* Styles for Swiper, second carousel instance*/
   /* Styles for each item */
 }
 
@@ -44,31 +45,31 @@ footer {
   width: 100%;
 }
 
-.swiper-container.i1 {
+.swiper-container.i1, .swiper-container.i2 {
   width: 90%;
   height: calc((100vw/2 - 30px) * 0.8);
   background-color: white;
 }
 
-.swiper-container.i1 .swiper-slide {
+.swiper-container.i1 .swiper-slide, .swiper-container.i2 .swiper-slide {
   text-align: center;
   font-size: 18px;
   background-color: white;
   margin-top: 10px !important;
 }
 
-.swiper-container.i1 .item .imagen {
+.swiper-container.i1 .item .imagen, .swiper-container.i2 .item .imagen {
   height: 80%;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
 }
 
-.swiper-container.i1 .item p {
+.swiper-container.i1 .item p, .swiper-container.i2 .item p {
   margin: 0 10px;
 }
 
-.swiper-container.i1 .item .texto {
+.swiper-container.i1 .item .texto, .swiper-container.i2 .item .texto {
   height: 12%;
   font-size: 1.7vw;
   text-align: left;
@@ -77,33 +78,21 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .swiper-container.i1 .item .texto {
+  .swiper-container.i1 .item .texto, .swiper-container.i2 .item .texto {
     font-size: 3vw;
   }
 }
 
-.swiper-container.i1 .swiper-pagination {
+.swiper-container.i1 .swiper-pagination, .swiper-container.i2 .swiper-pagination {
   bottom: 0;
 }
 
 .swiper-container.i2 {
-  width: 90%;
   height: calc((100vw/2) * 0.6);
-  background-color: white;
-}
-
-.swiper-container.i2 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background-color: white;
-  margin-top: 10px !important;
 }
 
 .swiper-container.i2 .item .imagen {
   height: 77%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
 }
 
 .swiper-container.i2 .item p {
@@ -111,19 +100,17 @@ footer {
 }
 
 .swiper-container.i2 .item .texto {
-  font-size: 1.7vw;
-  text-align: left;
-  font-weight: 500;
+  background-color: white;
 }
 
 @media (max-width: 600px) {
   .swiper-container.hero {
     height: calc(100vw * 1.2);
   }
-  .swiper-container.i1 {
+  .swiper-container.i1, .swiper-container.i2 {
     height: calc((100vw/2 - 30px) * 3.2);
   }
-  .swiper-container.i1 .swiper-slide {
+  .swiper-container.i1 .swiper-slide, .swiper-container.i2 .swiper-slide {
     height: 45%;
     background-color: white;
   }
