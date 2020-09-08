@@ -84,7 +84,7 @@ footer {
 }
 
 .swiper-container.i1 .swiper-pagination {
-  bottom: 0;
+  bottom: -4px;
 }
 
 .swiper-container.i2 {
@@ -129,6 +129,9 @@ footer {
   .swiper-container.i1 .swiper-slide {
     height: 45%;
     background-color: white;
+  }
+  .swiper-container.i1 .swiper-pagination {
+    bottom: 10px;
   }
   .swiper-container.i2 {
     height: calc((100vw/2) * 1.5);

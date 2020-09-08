@@ -85,7 +85,7 @@ footer {
         }
     }   
     &.i1 .swiper-pagination {
-        bottom: 0;
+        bottom: -4px;
     }
 
     /* Second Carousel Instance */
@@ -137,6 +137,9 @@ footer {
         &.i1 .swiper-slide {
             height: 45%;
             background-color: white
+        }
+        &.i1 .swiper-pagination {
+            bottom: 10px;
         }
         &.i2 {
             height: calc((100vw/2) * 1.5);
