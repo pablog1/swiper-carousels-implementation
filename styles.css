@@ -24,6 +24,7 @@ footer {
   /* Styles for each item, hero */
   /* Styles for Swiper, first carousel instance*/
   /* Styles for each item, first carousel instance */
+  /* Second Carousel Instance */
   /* Styles for each item */
 }
 
@@ -114,6 +115,10 @@ footer {
   background-color: white;
 }
 
+.swiper-container.i2 .swiper-pagination {
+  bottom: 0px;
+}
+
 @media (max-width: 600px) {
   .swiper-container.hero {
     height: calc(100vw * 1.2);
@@ -134,6 +139,9 @@ footer {
   }
   .swiper-container.i2 .item .texto {
     font-size: 3vw;
+  }
+  .swiper-container.i2 .swiper-pagination {
+    bottom: 15px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
