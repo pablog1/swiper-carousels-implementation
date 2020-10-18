@@ -103,11 +103,9 @@ window.onload = function () {
   });
 
   //resize
-  const heightOutput = document.querySelector("#height");
-  const widthOutput = document.querySelector("#width");
+  const info = document.querySelector("#info");
   const fixWidth = 600 + 15;
-
-
+  let diff, newMargin;
   calcLeftMargin();
   reportWindowSize();
 
@@ -117,18 +115,23 @@ window.onload = function () {
   });
 
   function reportWindowSize() {
-    heightOutput.textContent = window.innerHeight;
-    widthOutput.textContent = window.innerWidth;
+    info.innerHTML = `
+    That is a 600px Fix Div<br>
+    height = ` + window.innerHeight + `<br>
+    width = `+ window.innerWidth + `<br>
+    diff = width / 2 * 0.2 = `+ diff + `<br>
+    FixWidth = `+ fixWidth + `<br>
+    newleftMargin = (width - fixWidth + diff) / 2 = `+ newMargin + `<br>`;
   }
-
   function calcLeftMargin(){
     let firstItem = document.querySelector(".swiper-container.i3 .first-item");
     // Set margin
-    let diff = window.innerWidth / 2 * 0.2;
+    diff = window.innerWidth / 2 * 0.2;
     let newFixWidth = fixWidth + diff; //correct error;
+    newMargin = (window.innerWidth  - newFixWidth) /2;
 
-    console.log('diff = ' + diff + 'fixWidth = ' + newFixWidth);
+    console.log('diff = ' + diff + 'fixWidth = ' + newFixWidth + ' marginLeft = ' + newMargin);
 
-    firstItem.style.marginLeft = ((window.innerWidth  - newFixWidth) /2 ) + "px";
+    firstItem.style.marginLeft = newMargin + "px";
   }
 };
