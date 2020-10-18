@@ -78,4 +78,32 @@ window.onload = function () {
         }
     });
 
+    var swiper3 = new Swiper('.swiper-container.i3', {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+        //slidesPerColumn: 2,
+        loop: false, // it doesn't work with multiple rows 
+        pagination: {
+            el: '.i3 .swiper-pagination',
+            clickable: true,
+            dynamicBullets: true
+        },
+        autoplay: false,
+        navigation: {
+            nextEl: '.i3 .swiper-button-next',
+            prevEl: '.i3 .swiper-button-prev',
+        },
+
+        // Responsive breakpoints
+        breakpoints: {
+            600: {
+                slidesPerView: 3.5,
+                slidesPerColumn: 1,
+                pagination: {
+                    dynamicBullets: true
+                },
+            }
+        }
+    });
+
 }

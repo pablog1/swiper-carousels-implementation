@@ -90,37 +90,37 @@ footer {
 
     /* Second Carousel Instance */
 
-    &.i2 {
+    &.i2, &.i3 {
         width: 90%;
         height: calc((100vw/2) * 0.6);
         background-color: white;
-    }
-    &.i2 .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background-color: white;
-        margin-top: 10px !important
-    }
-    /* Styles for each item */
 
-    &.i2 .item .imagen {
-        height: 77%;
-        object-fit: cover;
-        width: 100%;
-    }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background-color: white;
+            margin-top: 10px !important
+        }
 
-    &.i2 .item p {
-        margin: 0 10px;
-    }
-
-    &.i2 .item .texto {
-        @extend .texto;
-        background-color: white;
-    }
-
-    &.i2 .swiper-pagination {
-        bottom: 0px;
-    }
+        .item{
+            /* Styles for each item */
+            .imagen {
+                height: 77%;
+                object-fit: cover;
+                width: 100%;
+            }
+            p {
+                margin: 0 10px;
+            }
+            .texto {
+                @extend .texto;
+                background-color: white;
+            }
+        }
+        .swiper-pagination {
+            bottom: 0px;
+        }
+    } 
 }
 
 
@@ -141,20 +141,18 @@ footer {
         &.i1 .swiper-pagination {
             bottom: 10px;
         }
-        &.i2 {
+        &.i2, &.i3 {
             height: calc((100vw/2) * 1.5);
+            .swiper-slide {
+                height: 90%;
+                background-color: white;
+            }
+            .item .texto {
+                font-size: 3vw;
+            }
+            .swiper-pagination {
+                bottom: 15px;
+            }
         }
-        &.i2 .swiper-slide {
-            height: 90%;
-            background-color: white;
-        }
-
-        &.i2 .item .texto {
-            font-size: 3vw;
-        }
-        &.i2 .swiper-pagination {
-            bottom: 15px;
-        }
-
     }
 }
