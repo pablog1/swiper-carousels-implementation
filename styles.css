@@ -24,7 +24,7 @@ footer {
   /* Styles for each item, hero */
   /* Styles for Swiper, first carousel instance*/
   /* Styles for each item, first carousel instance */
-  /* Second Carousel Instance */
+  /* Second and 3th. Carousel Instance */
 }
 
 .swiper-container.hero {
@@ -149,5 +149,21 @@ footer {
   .swiper-container.i2 .swiper-pagination, .swiper-container.i3 .swiper-pagination {
     bottom: 15px;
   }
+}
+
+.fix-div {
+  width: 600px;
+  height: 100px;
+  background-color: #ddfe9b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,370 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SCarousels Examples</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <title>SCarousels Examples</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <!-- Add this part below the jQuery script call -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  <!-- Add this part below the jQuery script call -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="custom-swiper.js"></script>
+  </head>
 
-  <script type="text/javascript" src="custom-swiper.js"></script>
+  <body>
+    <header>
+      <h1>Carousels Examples for eCommerce Websites</h1>
+      <h2>Built with Swiper Library</h2>
+    </header>
 
-
-</head>
-
-<body>
-  <header>
-    <h1>Carousels Examples for eCommerce Websites</h1>
-    <h2>Built with Swiper Library</h2>
-  </header>
-
-  <!-- Start Swiper Carousel heml, slider-->
-  <div class="swiper-container hero">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide item">
-        <img src="img/slider1.jpg" class="imagen">
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/slider2.jpg" class="imagen">
-      </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-  <!-- End Swiper Carousel, slider instance -->
-
-  <div class="separator">
-    <h3>Carousel with two rows in mobile sizes</h3>
-  </div>
-
-
-  <!-- Start Swiper Carousel heml, firts instance-->
-  <div class="swiper-container i1">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide item">
-        <img src="img/foto1.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto2.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto3.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto4.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto5.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto6.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto7.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto8.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- Add Arrows -->
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
-  <!-- End Swiper Carousel, first instance -->
-
-
-
-  <div class="separator">
-    <h3>Carousel with an incomplet item and dinamic dots. Infinite loop only on mobile size </h3>
-  </div>
-
-
-
-  <!-- Start Swiper Carousel heml, second instance-->
-  <div class="swiper-container i2">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide item">
-        <img src="img/foto1.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto2.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto3.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto4.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto5.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto6.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto7.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto8.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto1.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto2.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto1.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto2.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto1.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-      <div class="swiper-slide item">
-        <img src="img/foto2.jpg" class="imagen">
-        <div class="texto">
-          <p>Title<br>$ 120</p>
-        </div>
-      </div>
-
-
-
-    </div>
-
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- Add Arrows -->
-    <!-- <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div> -->
-  </div>
-  <!-- End Swiper Carousel, first instance -->
-
-  <div class="separator">
-    <h3>Carousel with an extra left margin by start </h3>
-  </div>
-
-  <!-- Start Swiper Carousel with extra left margin-->
-    <div class="swiper-container i3">
+    <!-- Start Swiper Carousel heml, slider-->
+    <div class="swiper-container hero">
       <div class="swiper-wrapper">
-        <div class="swiper-slide item" style="margin-left: 200px;">
-          <img src="img/foto1.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
         <div class="swiper-slide item">
-          <img src="img/foto2.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
+          <img src="img/slider1.jpg" class="imagen" />
         </div>
-  
+
         <div class="swiper-slide item">
-          <img src="img/foto3.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
+          <img src="img/slider2.jpg" class="imagen" />
         </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto4.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto5.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto6.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto7.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto8.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto1.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto2.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto1.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto2.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto1.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-        <div class="swiper-slide item">
-          <img src="img/foto2.jpg" class="imagen">
-          <div class="texto">
-            <p>Title<br>$ 120</p>
-          </div>
-        </div>
-  
-  
-  
       </div>
-  
       <!-- Add Pagination -->
       <div class="swiper-pagination"></div>
-  
+
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <!-- End Swiper Carousel, slider instance -->
+
+    <div class="separator">
+      <h3>Carousel with two rows in mobile sizes</h3>
+    </div>
+
+    <!-- Start Swiper Carousel heml, firts instance-->
+    <div class="swiper-container i1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide item">
+          <img src="img/foto1.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto2.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto3.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto4.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto5.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto6.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto7.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto8.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+    <!-- End Swiper Carousel, first instance -->
+
+    <div class="separator">
+      <h3>
+        Carousel with an incomplet item and dinamic dots. Infinite loop only on
+        mobile size
+      </h3>
+    </div>
+
+    <!-- Start Swiper Carousel heml, second instance-->
+    <div class="swiper-container i2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide item">
+          <img src="img/foto1.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto2.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto3.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto4.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto5.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto6.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto7.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto8.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto1.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto2.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto1.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto2.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto1.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto2.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Add Arrows -->
+      <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+    </div>
+    <!-- End Swiper Carousel, first instance -->
+
+    <div class="separator">
+      <h3>Carousel with an extra left margin by start</h3>
+    </div>
+
+    <p>Resize the browser window to fire the <code>resize</code> event.</p>
+    <p>Window height: <span id="height"></span></p>
+    <p>Window width: <span id="width"></span></p>
+    <div class="fix-div">That is a 600px Fix Div</div>
+
+    <!-- Start Swiper Carousel with extra left margin-->
+    <div class="swiper-container i3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide item first-item">
+          <img src="img/foto1.jpg" class="imagen" />
+          <div class="texto">
+            <p>First one!<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto2.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto3.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto4.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto5.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto6.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto7.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto8.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto1.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto2.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto1.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto2.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto1.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide item">
+          <img src="img/foto2.jpg" class="imagen" />
+          <div class="texto">
+            <p>Title<br />$ 120</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+
       <!-- Add Arrows -->
       <!-- <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div> -->
     </div>
     <!-- End Swiper Carousel with extra left margin -->
 
-  <footer>
-  </footer>
-
-
-</body>
-
+    <footer></footer>
+  </body>
 </html>

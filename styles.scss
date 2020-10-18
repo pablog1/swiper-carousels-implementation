@@ -88,7 +88,7 @@ footer {
         bottom: -4px;
     }
 
-    /* Second Carousel Instance */
+    /* Second and 3th. Carousel Instance */
 
     &.i2, &.i3 {
         width: 90%;
@@ -155,4 +155,14 @@ footer {
             }
         }
     }
+}
+
+.fix-div{
+    width: 600px;
+    height: 100px;
+    background-color: #ddfe9b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }

@@ -1,109 +1,134 @@
 window.onload = function () {
+  //Initialize Swiper
 
-    //Initialize Swiper 
+  var swiperHero = new Swiper(".swiper-container.hero", {
+    slidesPerView: 1,
+    autoplay: {
+      delay: 3000,
+    },
+    slidesPerColumn: 1,
+    loop: true, // it doesn't work with multiple rows
+    pagination: {
+      el: ".hero .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".hero .swiper-button-next",
+      prevEl: ".hero .swiper-button-prev",
+    },
+  });
 
+  var swiper1 = new Swiper(".swiper-container.i1", {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    slidesPerColumn: 2,
+    loop: false, // it doesn't work with multiple rows
+    pagination: {
+      el: ".i1 .swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".i1 .swiper-button-next",
+      prevEl: ".i1 .swiper-button-prev",
+    },
 
-    var swiperHero = new Swiper('.swiper-container.hero', {
-        slidesPerView: 1,
-        autoplay: {
-            delay: 3000
-        },
+    // Responsive breakpoints
+    breakpoints: {
+      600: {
+        slidesPerView: 4,
         slidesPerColumn: 1,
-        loop: true, // it doesn't work with multiple rows 
+        loop: true,
+      },
+    },
+  });
+
+  var swiper2 = new Swiper(".swiper-container.i2", {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    //slidesPerColumn: 2,
+    loop: true, // it doesn't work with multiple rows
+    pagination: {
+      el: ".i2 .swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: true,
+    },
+    navigation: {
+      nextEl: ".i2 .swiper-button-next",
+      prevEl: ".i2 .swiper-button-prev",
+    },
+
+    // Responsive breakpoints
+    breakpoints: {
+      600: {
+        slidesPerView: 3.5,
+        slidesPerColumn: 1,
+        loop: false,
         pagination: {
-            el: '.hero .swiper-pagination',
-            clickable: true,
+          dynamicBullets: true,
         },
-        navigation: {
-            nextEl: '.hero .swiper-button-next',
-            prevEl: '.hero .swiper-button-prev',
-        }
+      },
+    },
+  });
 
-    });
+  var swiper3 = new Swiper(".swiper-container.i3", {
+    slidesPerView: 1.5,
+    spaceBetween: 20,
+    //slidesPerColumn: 2,
+    loop: false, // it doesn't work with multiple rows
+    pagination: {
+      el: ".i3 .swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    autoplay: false,
+    navigation: {
+      nextEl: ".i3 .swiper-button-next",
+      prevEl: ".i3 .swiper-button-prev",
+    },
 
-
-    var swiper1 = new Swiper('.swiper-container.i1', {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        slidesPerColumn: 2,
-        loop: false, // it doesn't work with multiple rows 
+    // Responsive breakpoints
+    breakpoints: {
+      600: {
+        slidesPerView: 3.5,
+        slidesPerColumn: 1,
         pagination: {
-            el: '.i1 .swiper-pagination',
-            clickable: true,
+          dynamicBullets: true,
         },
-        navigation: {
-            nextEl: '.i1 .swiper-button-next',
-            prevEl: '.i1 .swiper-button-prev',
-        },
+      },
+    },
+  });
 
-        // Responsive breakpoints
-        breakpoints: {
-            600: {
-                slidesPerView: 4,
-                slidesPerColumn: 1,
-                loop: true
-            }
-        }
-    });
+  //resize
+  const heightOutput = document.querySelector("#height");
+  const widthOutput = document.querySelector("#width");
+  const fixWidth = 600 + 15;
 
-    var swiper2 = new Swiper('.swiper-container.i2', {
-        slidesPerView: 1.5,
-        spaceBetween: 20,
-        //slidesPerColumn: 2,
-        loop: true, // it doesn't work with multiple rows 
-        pagination: {
-            el: '.i2 .swiper-pagination',
-            clickable: true,
-            dynamicBullets: true
-        },
-        autoplay: {
-            delay: 1000,
-            disableOnInteraction: true,
-        },
-        navigation: {
-            nextEl: '.i2 .swiper-button-next',
-            prevEl: '.i2 .swiper-button-prev',
-        },
 
-        // Responsive breakpoints
-        breakpoints: {
-            600: {
-                slidesPerView: 3.5,
-                slidesPerColumn: 1,
-                loop: false,
-                pagination: {
-                    dynamicBullets: true
-                },
-            }
-        }
-    });
+  calcLeftMargin();
+  reportWindowSize();
 
-    var swiper3 = new Swiper('.swiper-container.i3', {
-        slidesPerView: 1.5,
-        spaceBetween: 20,
-        //slidesPerColumn: 2,
-        loop: false, // it doesn't work with multiple rows 
-        pagination: {
-            el: '.i3 .swiper-pagination',
-            clickable: true,
-            dynamicBullets: true
-        },
-        autoplay: false,
-        navigation: {
-            nextEl: '.i3 .swiper-button-next',
-            prevEl: '.i3 .swiper-button-prev',
-        },
+  window.addEventListener("resize", ()=>{
+    reportWindowSize();
+    calcLeftMargin();
+  });
 
-        // Responsive breakpoints
-        breakpoints: {
-            600: {
-                slidesPerView: 3.5,
-                slidesPerColumn: 1,
-                pagination: {
-                    dynamicBullets: true
-                },
-            }
-        }
-    });
+  function reportWindowSize() {
+    heightOutput.textContent = window.innerHeight;
+    widthOutput.textContent = window.innerWidth;
+  }
 
-}
+  function calcLeftMargin(){
+    let firstItem = document.querySelector(".swiper-container.i3 .first-item");
+    // Set margin
+    let diff = window.innerWidth / 2 * 0.2;
+    let newFixWidth = fixWidth + diff; //correct error;
+
+    console.log('diff = ' + diff + 'fixWidth = ' + newFixWidth);
+
+    firstItem.style.marginLeft = ((window.innerWidth  - newFixWidth) /2 ) + "px";
+  }
+};
