@@ -95,9 +95,7 @@ window.onload = function () {
       600: {
         slidesPerView: 3.5,
         slidesPerColumn: 1,
-        pagination: {
-          dynamicBullets: true,
-        },
+        pagination: false,
       },
     },
   });
