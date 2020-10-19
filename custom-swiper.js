@@ -75,7 +75,7 @@ window.onload = function () {
   });
 
   var swiper3 = new Swiper(".swiper-container.i3", {
-    slidesPerView: 1.5,
+    slidesPerView: 3,
     spaceBetween: 20,
     //slidesPerColumn: 2,
     loop: false, // it doesn't work with multiple rows
@@ -93,7 +93,7 @@ window.onload = function () {
     // Responsive breakpoints
     breakpoints: {
       600: {
-        slidesPerView: 3.5,
+        slidesPerView: 5.2,
         slidesPerColumn: 1,
         pagination: false,
       },
@@ -102,7 +102,7 @@ window.onload = function () {
 
   //resize
   const info = document.querySelector("#info");
-  const fixWidth = 600 + 15;
+  const fixWidth = 1500 + 15;
   let diff, newMargin;
   calcLeftMargin();
   reportWindowSize();
@@ -114,22 +114,23 @@ window.onload = function () {
 
   function reportWindowSize() {
     info.innerHTML = `
-    That is a 600px Fix Div<br>
+    That is a 1500px Fix Div<br>
     height = ` + window.innerHeight + `<br>
     width = `+ window.innerWidth + `<br>
-    diff = width / 2 * 0.2 = `+ diff + `<br>
     FixWidth = `+ fixWidth + `<br>
-    newleftMargin = (width - fixWidth + diff) / 2 = `+ newMargin + `<br>`;
+    newleftMargin = (width - fixWidth ) / 2 = `+ newMargin + `<br>`;
   }
   function calcLeftMargin(){
     let firstItem = document.querySelector(".swiper-container.i3 .first-item");
     // Set margin
-    diff = window.innerWidth / 2 * 0.2;
+    //diff = window.innerWidth / 2 * 0.2;
+    diff= 0;
     let newFixWidth = fixWidth + diff; //correct error;
     newMargin = (window.innerWidth  - newFixWidth) /2;
 
     console.log('diff = ' + diff + 'fixWidth = ' + newFixWidth + ' marginLeft = ' + newMargin);
 
-    firstItem.style.marginLeft = newMargin + "px";
+    if(window.innerWidth>= 1500)firstItem.style.marginLeft = newMargin + "px";
+    else firstItem.style.marginLeft ="0px";
   }
 };
